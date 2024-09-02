@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Genie</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="menu-options">
+        <button onclick="window.location.href='game.html'">Play as a Guest</button> <!--Copied from freefrontend.com-->
+    </div>
+    <div id="genie-container">
+        <img src="gif1.gif" alt="Genie GIF" id="genie-gif">
+        <div id="message-box">
+            <p id="message"></p>
+        </div>
+        <form id="name-form" style="display: none;">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <button type="button" id="next-button">Next</button>
+        </form>
+        <form id="email-form" style="display: none;">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

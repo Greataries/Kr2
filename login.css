@@ -1,0 +1,213 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    /* Black background */
+    color: #fff;
+    /* White text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* To hide any scrollbars */
+}
+
+#genie-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    padding: 80px;
+}
+
+#genie-gif {
+    width: 270px;
+    /* Larger genie size */
+    position: absolute;
+    right: -40px;
+    bottom: 0;
+    /* Positioned at the bottom right */
+    animation: slideInFromRight 2s forwards ease-in-out;
+}
+
+/* Keyframes for sliding in completely from the right with a slight overshoot */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(300%); /* Start completely off-screen */
+    }
+    80% {
+        transform: translateX(-20px); /* Overshoot slightly past the final position */
+    }
+    100% {
+        transform: translateX(0); /* Settle back into final position */
+    }
+}
+
+#message-box {
+    display: none; /* Hide the message box initially */
+    background-color: rgba(255, 255, 255, 0.9); /* Opaque background for the speech bubble */
+    padding: 15px;
+    border-radius: 15px;
+    position: absolute;
+    left: 100px;
+    bottom: 220px; /* Positioned above the genie */
+    width: 50%; /* Adjusted width */
+    color: #000000; /* Black text for readability */
+    font-size: 20px; /* Larger font for visibility */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect */
+    text-align: left;
+}
+
+
+form {
+    margin-top: 50px;
+    text-align: left;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    /* Positioned below the message box */
+    width: 80%;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #3700b3;
+    /* Darker shade on hover */
+}
+
+/* Keyframes for the fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-options {
+    position: fixed;
+    top: 300px;
+    right: 130px;
+    z-index: 1000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-options button {
+    padding: 15px 2dvb;
+    background-color: #050801;
+    display: block;
+    /* To make the buttons appear one below the other */
+    margin-bottom: 40px;
+    /* Adjust the value to your preference */
+    color: #03e9f4;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu-options button:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+/* Additional styles for buttons in the selection process */
+.selection-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px; /* Spacing between buttons */
+    align-items: center; /* Center align buttons */
+}
+
+.selection-buttons button {
+    padding: 15px 30px;
+    background-color: #03e9f4;
+    color: #050801;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.selection-buttons button:hover {
+    background-color: #03e9f4;
+    color: #050801;
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+.selection-buttons button:active {
+    background-color: #03e9f4;
+    color: #050801;
+    transform: scale(0.9); /* Slightly shrink button on click */
+}
+/* Fade-in animation for the message box */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+@keyframes slideOutToRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(300%);
+    }
+}
+
+#genie-gif {
+    animation: slideInFromRight 2s forwards ease-in-out;
+}
+
