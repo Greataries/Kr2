@@ -20,10 +20,10 @@ let curr_track = document.createElement('audio');
 
 let track_list = [
     {
-        name: "Shipping Lanes",
-        artist: "Chad Crouch",
-        image: "https://img.freepik.com/free-photo/digital-art-galaxy_23-2151050729.jpg?ga=GA1.1.1076150632.1724493676&semt=ais_hybrid",
-        path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Chad_Crouch/Arps/Chad_Crouch_-_Shipping_Lanes.mp3",
+        name: "Night Owl",
+        artist: "Broke For Free",
+        image: "https://img.freepik.com/free-photo/beautiful-planets-space_23-2149288530.jpg?t=st=1724531570~exp=1724535170~hmac=b1147edbb111041494d13346be829b485572b1dbd9128370c6b7a44b6b6684ee&w=900",
+        path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"
     },
     {
         name: "Enthusiast",
@@ -32,10 +32,10 @@ let track_list = [
         path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Tours/Enthusiast/Tours_-_01_-_Enthusiast.mp3"
     },
     {
-        name: "Night Owl",
-        artist: "Broke For Free",
-        image: "https://img.freepik.com/free-photo/beautiful-planets-space_23-2149288530.jpg?t=st=1724531570~exp=1724535170~hmac=b1147edbb111041494d13346be829b485572b1dbd9128370c6b7a44b6b6684ee&w=900",
-        path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"
+        name: "Shipping Lanes",
+        artist: "Chad Crouch",
+        image: "https://img.freepik.com/free-photo/digital-art-galaxy_23-2151050729.jpg?ga=GA1.1.1076150632.1724493676&semt=ais_hybrid",
+        path: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/Chad_Crouch/Arps/Chad_Crouch_-_Shipping_Lanes.mp3"
     }
 ];
 
